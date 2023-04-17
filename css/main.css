@@ -1,0 +1,144 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales*/
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: whitesmoke;
+    justify-content: space-around;
+    align-items: baseline;
+    height: auto;
+    gap: 1.rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 30px;
+    text-align: center;
+}
+
+/* estilos del nav*/
+ul {
+    line-height: 50px;
+    text-decoration: none;
+  }
+  
+  li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  li.inicio:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  li.portafolio:hover {
+    background-color: rgb(4, 255, 0);
+    color: black;
+  }
+  
+  li.resumen:hover {
+    background-color: rgb(0, 225, 255);
+    color: black;
+  }
+  
+  li.contactame:hover {
+    background-color: rgb(255, 0, 225);
+    color: black;
+  }
+
+  
+/* estilos del titulo y descripcion*/
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: left;
+    margin: 30px;
+    color: white;
+}
+
+div p {
+    margin: 30px;
+    font-size: 30px;
+    line-height: 8px;
+    color: rgba(118, 118, 118, 0.502);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+
+}
+
+.container {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    
+  }
+  
+.superior {
+    
+    position: absolute;
+    top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+  }
+  
+  
+  /* estilos del main */
+
+  main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     
+  }
+/* para pantallas de 1024px o mayores */
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    border-radius: 5px;
+    margin-left: 30px; /* agregar margen izquierdo de 30px */
+    
+  }
+  
+  /* para pantallas de 600px o mayores */
+  @media (max-width: 1023px) {
+    .main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  
+  /* para pantallas de 599px o menores */
+  @media (max-width: 599px) {
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  
+ footer p{
+    text-align: center;
+    font-size: small;
+    color: darkgoldenrod;
+ } 
+
+  /* estilos del portafolio* - boostrap*/
+
+  
+
